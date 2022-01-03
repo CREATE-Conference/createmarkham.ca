@@ -863,7 +863,7 @@ a {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    z-index: 5;
+    z-index: 1;
     transition: transform .3s ease-in-out;
 }
 
