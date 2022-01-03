@@ -898,9 +898,12 @@ a {
         font-size: 3.2rem;
     }
 
-    .prev,
+    .prev {
+        transform: rotate(180deg) translateY(50%) scale(0.8);
+    }
+
     .next {
-        transform: scale(0.8);
+        transform: translateY(-50%) scale(0.8);
     }
 }
 
@@ -909,16 +912,22 @@ a {
         font-size: 3rem;
     }
 
-    .prev,
+    .prev {
+        transform: rotate(180deg) translateY(50%) scale(0.6);
+    }
+
     .next {
-        transform: scale(0.6);
+        transform: translateY(-50%) scale(0.6);
     }
 }
 
 @media (max-width: 360px) {
 
-    .prev,
+    .prev {
+        transform: rotate(180deg) translateY(50%) scale(0.4);
+    }
+
     .next {
-        transform: scale(0.4);
+        transform: translateY(-50%) scale(0.4);
     }
 }
