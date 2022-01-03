@@ -171,6 +171,12 @@ a {
     }
 }
 
+@media (max-width: 360px) {
+    .nav__items {
+        margin-left: 2.5rem;
+    }
+}
+
 /* Re-Usable Components */
 .btn-row {
     margin: 5rem auto;
@@ -332,7 +338,7 @@ a {
 .landing {
     display: block;
     width: 100vw;
-    min-height: calc(100vh - 7.5rem);
+    min-height: max(calc(100vh - 7.5rem), 60rem);
     position: relative;
 }
 
@@ -349,7 +355,7 @@ a {
 
 .landing__text {
     position: absolute;
-    margin-top: calc(0.5 * (100vh - 7.5rem));
+    margin-top: max(calc(0.5 * (100vh - 7.5rem)), 35rem);
     transform: translateY(-61%);
 }
 
