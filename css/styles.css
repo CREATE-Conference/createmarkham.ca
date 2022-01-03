@@ -356,7 +356,7 @@ a {
 .landing__text {
     position: absolute;
     margin-top: max(calc(0.5 * (100vh - 7.5rem)), 35rem);
-    transform: translateY(-61%);
+    transform: translateY(-55%);
 }
 
 .landing__title,
