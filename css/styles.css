@@ -274,6 +274,12 @@ a {
     }
 }
 
+@media (max-width: 786px) {
+    .scroll-down {
+        top: 70vh;
+    }
+}
+
 .circle {
     position: absolute;
     background-color: var(--circle-color);
@@ -316,7 +322,7 @@ a {
 .landing {
     display: block;
     width: 100vw;
-    height: calc(100vh - 7.5rem);
+    min-height: calc(100vh - 7.5rem);
     position: relative;
 }
 
