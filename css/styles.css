@@ -898,12 +898,22 @@ a {
         font-size: 3.2rem;
     }
 
-    .prev {
+    .prev,
+    .prev:active {
         transform: rotate(180deg) translateY(50%) scale(0.8);
     }
 
-    .next {
+    .prev:hover {
+        transform: rotate(180deg) translateY(50%) scale(0.9);
+    }
+
+    .next,
+    .next:active {
         transform: translateY(-50%) scale(0.8);
+    }
+
+    .next:hover {
+        transform: translateY(-50%) scale(0.9);
     }
 }
 
@@ -912,22 +922,42 @@ a {
         font-size: 3rem;
     }
 
-    .prev {
+    .prev,
+    .prev:active {
         transform: rotate(180deg) translateY(50%) scale(0.6);
     }
 
-    .next {
+    .prev:hover {
+        transform: rotate(180deg) translateY(50%) scale(0.7);
+    }
+
+    .next,
+    .next:active {
         transform: translateY(-50%) scale(0.6);
+    }
+
+    .next:hover {
+        transform: translateY(-50%) scale(0.7);
     }
 }
 
 @media (max-width: 360px) {
 
-    .prev {
+    .prev,
+    .prev:active {
         transform: rotate(180deg) translateY(50%) scale(0.4);
     }
 
-    .next {
+    .prev:hover {
+        transform: rotate(180deg) translateY(50%) scale(0.5);
+    }
+
+    .next,
+    .next:active {
         transform: translateY(-50%) scale(0.4);
+    }
+
+    .next:hover {
+        transform: translateY(-50%) scale(0.5);
     }
 }
