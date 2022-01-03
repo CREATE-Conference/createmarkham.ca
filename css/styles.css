@@ -897,10 +897,28 @@ a {
     .carousel__title {
         font-size: 3.2rem;
     }
+
+    .prev,
+    .next {
+        transform: scale(0.8);
+    }
 }
 
 @media (max-width: 786px) {
     .carousel__title {
         font-size: 3rem;
+    }
+
+    .prev,
+    .next {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 360px) {
+
+    .prev,
+    .next {
+        transform: scale(0.4);
     }
 }
