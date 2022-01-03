@@ -289,8 +289,8 @@ a {
 }
 
 .circle--1 {
-    height: 90vh;
-    width: 90vh;
+    height: min(90vh, 90vw);
+    width: min(90vh, 90vw);
     top: 5vh;
     left: -30vh;
     animation: circle-1 60s linear infinite;
@@ -298,8 +298,8 @@ a {
 }
 
 .circle--2 {
-    height: 60vh;
-    width: 60vh;
+    height: min(60vh, 60vw);
+    width: min(60vh, 60vw);
     top: -10vh;
     right: 3vh;
     animation: circle-2 35s linear infinite;
@@ -315,6 +315,16 @@ a {
 @keyframes circle-2 {
     100% {
         transform: rotate(-2turn) translate(20rem) rotate(2turn);
+    }
+}
+
+@media (max-width: 786px) {
+    .circle--1 {
+        top: 20vh;
+    }
+
+    .circle--2 {
+        top: -5vh;
     }
 }
 
