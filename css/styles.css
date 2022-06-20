@@ -212,6 +212,10 @@ a {
   color: var(--bg-color);
 }
 
+.col-2--applications .btn {
+  display: inline-block;
+}
+
 .btn--main:hover {
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
@@ -528,10 +532,6 @@ a {
   padding: 7rem 6rem 6rem;
 }
 
-.col-2--applications .card--story {
-  min-height: 40rem;
-}
-
 .card__icon {
   position: absolute;
   top: 2rem;
@@ -560,6 +560,10 @@ a {
 
 .col-2--team .card__text {
   margin-bottom: 2rem;
+}
+
+.col-2--applications .card__text {
+  margin-bottom: 4rem;
 }
 
 .card__text:not(:first-of-type) {
